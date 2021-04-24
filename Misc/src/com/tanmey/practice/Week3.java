@@ -57,6 +57,7 @@ public class Week3 {
 				}
 			}
 		}
+		System.out.println(" lowest temp  "+Double.parseDouble(coldestTemp.get("TemperatureF")));
 		return fileName.getAbsolutePath();
 	}
 
@@ -204,4 +205,29 @@ public class Week3 {
 			System.out.println("No Temperature was found");
 		}
 	}
+	
+    public void tester()
+    {
+        FileResource fr = new FileResource();
+        CSVParser parser = fr.getCSVParser();
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // parser = fr.getCSVParser(); //... Each time you want to use the parser with another method,
+        ///////////////////////////// .. you will need to reset the parser by calling fr.getCSVParser() again to get a new parser.
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        System.out.println(" coldest temperature :"); testFileWithColdestTemperature();
+
+       // System.out.println(" coldest temperature for 2014 :"); fileWithColdestTemperature();
+        
+      // System.out.println(" lowest humidity for  :"); testLowestHumidityInManyFiles();
+        //System.out.println(" avg  temp :"); testAverageTemperatureInFile();
+     //   System.out.println(" avg  temp  humidity is greater than or equal to 80?  :"); testAverageTemperatureWithHighHumidityInFile();
+
+    }
+
+
+    public static void main (String[] args)
+    {
+        Week3 CSV = new Week3();
+        CSV.tester();
+    }
 }
