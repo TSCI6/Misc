@@ -1,4 +1,4 @@
-package com.tanmey.practice;
+package com.tanmey.Duke.SolvingProblemsWithSoftware;
 import edu.duke.*;
 import org.apache.commons.csv.*;
 import java.util.*;

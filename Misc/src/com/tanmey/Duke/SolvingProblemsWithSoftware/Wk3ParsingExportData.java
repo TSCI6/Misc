@@ -1,4 +1,4 @@
-package com.tanmey.practice;
+package com.tanmey.Duke.SolvingProblemsWithSoftware;
 
 
 import java.io.*;
