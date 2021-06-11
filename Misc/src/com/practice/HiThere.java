@@ -14,14 +14,11 @@ public class HiThere {
 	 */
 	public static void main(String[] args) {
 
-		System.out.println();
+		String s="1";
+		String s1= new String("1");
+		System.out.println(s==s1);
+		System.out.println(s.equals(s1));
 
 	}
 
-	public static boolean isAorE (char ch) {    	
-	     if (ch != 'a' || ch != 'e') {        	  
-	          return false;    
-	     }    	
-	     return true;
-	}
 }

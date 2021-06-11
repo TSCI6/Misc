@@ -101,7 +101,7 @@ public class WordsInFileMain
         System.out.println("The maximum number of files word is in: "+maximum +" and there are "+TestList.size());
         for (int k =0;k< TestList.size(); k++)
         {
-           System.out.println("All the words in the files #"+TestList.get(k)+" "+k);
+           System.out.println("All the words in the files #"+TestList.get(k)+"");
         }
         System.out.println("\t");
 
