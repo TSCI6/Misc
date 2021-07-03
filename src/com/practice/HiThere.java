@@ -18,6 +18,7 @@ public class HiThere {
 		String s1= new String("1");
 		System.out.println(s==s1);
 		System.out.println(s.equals(s1));
+		System.out.println("vaathi coming");
 
 	}
 
