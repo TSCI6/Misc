@@ -1,0 +1,24 @@
+class Solution {
+    public int maxProfit(int[] prices) {
+        int []smallest=new int[prices.length];
+        smallest[0]=prices[0];
+   
+        for (int i=1;i<prices.length;i++)
+        {
+            smallest[i]=Math.min(smallest[i-1],prices[i]);
+        }
+        int []largest=new int[prices.length];
+        largest[prices.length-1]=prices[prices.length-1];
+       
+        for(int i=prices.length-2;i>=0;i--)
+        {
+            largest[i]=Math.max(prices[i],largest[i+1]);
+        }
+        int res=0;
+        for(int i=0;i<prices.length;i++)
+        {
+            res=Math.max(largest[i]-smallest[i],res);
+    }
+    return res;
+}
+}
